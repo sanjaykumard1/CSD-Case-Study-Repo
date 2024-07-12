@@ -58,8 +58,8 @@ Develop a menu-based console application to manage customers, services, and subs
 
 **3.Running the Application**
 
-Run the Main.java class to start the application.
-Follow the menu options to manage customers, services, and subscriptions.
+-Run the Main.java class to start the application.
+-Follow the menu options to manage customers, services, and subscriptions.
 
 
 **4.Functionalities**
