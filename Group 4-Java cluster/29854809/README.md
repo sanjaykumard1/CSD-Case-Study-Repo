@@ -49,36 +49,36 @@ Develop a menu-based console application to manage customers, services, and subs
 
 **2.Java Project Setup**
 
--Clone the repository or download the source code.
--Open the project in your IDE (Eclipse or any other Java IDE).
--Ensure you have the MySQL JDBC driver in your project classpath.
--Update the DatabaseConnection.java file with your MySQL root password.
+- Clone the repository or download the source code.
+- Open the project in your IDE (Eclipse or any other Java IDE).
+- Ensure you have the MySQL JDBC driver in your project classpath.
+- Update the DatabaseConnection.java file with your MySQL root password.
 
 
 
 **3.Running the Application**
 
--Run the Main.java class to start the application.
--Follow the menu options to manage customers, services, and subscriptions.
+- Run the Main.java class to start the application.
+- Follow the menu options to manage customers, services, and subscriptions.
 
 
 **4.Functionalities**
   **Customer Management**
 
--Add new customers
--View customer details
--Update customer information
--Remove customers
+- Add new customers
+- View customer details
+- Update customer information
+- Remove customers
 
 **Service Management**
 
--Add new services (e.g., mobile, internet, TV)
--View service details
--Update service information
--Remove services
--Subscription Management
+- Add new services (e.g., mobile, internet, TV)
+- View service details
+- Update service information
+- Remove services
+- Subscription Management
 
 **Subscribe customers to services**
--View subscription details
--Update subscription information
--Remove subscriptions
+- View subscription details
+- Update subscription information
+- Remove subscriptions
