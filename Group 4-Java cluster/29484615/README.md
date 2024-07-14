@@ -80,9 +80,11 @@ AppointmentSchedulingDAO.java is responsible for handling database operations re
 
 ## Usage Instructions
 When you run the application, you will see a main menu with options for managing patients, managing doctors, and scheduling appointments. Select the desired option by entering the corresponding number.
+
 1.	Patient Management:
 
 Select the patient management option to add, view, update, or delete patient records.
+
 2.	 Doctor Management:
 
 Select the doctor management option to add, view, update, or delete doctor records.
