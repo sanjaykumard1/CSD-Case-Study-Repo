@@ -1,4 +1,4 @@
-#Insurance Management System
+# Insurance Management System
 
 This project is a console-based Insurance Management System implemented in Core Java, MySQL, and JDBC. The application allows users to manage policies, customers, and claims. 
 
@@ -108,11 +108,7 @@ This project is a console-based Insurance Management System implemented in Core 
 
 ### Running the Application
 
-1. Clone the repository:
-    ```sh
-    git clone https://github.com/yourusername/insurance-management-system.git
-    cd insurance-management-system
-    ```
+1. Clone the repository
 
 2. Configure the database connection in `JDBCUtil.java`:
     ```java
