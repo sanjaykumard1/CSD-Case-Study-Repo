@@ -123,6 +123,7 @@ CREATE TABLE Rental (
 
     java -cp .;mysql-connector-java-8.0.23.jar MovieRentalSystem
 ```
+
     Replace mysql-connector-java-8.0.23.jar with the path to your MySQL Connector JAR file.
 
 ## Usage
