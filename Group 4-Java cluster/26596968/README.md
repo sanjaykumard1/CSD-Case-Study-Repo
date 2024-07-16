@@ -45,7 +45,7 @@ This is a simple movie rental system developed using Core Java, MySQL, and JDBC.
   - `return_date`
 
 ## MySQL Code
-
+```
 CREATE DATABASE movierentalsystem;
 
 USE movierentalsystem;
@@ -74,6 +74,8 @@ CREATE TABLE Rental (
     FOREIGN KEY (movie_id) REFERENCES Movie(movie_id),
     FOREIGN KEY (customer_id) REFERENCES Customer(customer_id)
 );
+
+```
 
 ## Setup
 
@@ -104,7 +106,7 @@ CREATE TABLE Rental (
 
 3.	Configure Database Connection:
     Update the DatabaseUtil class with your MySQL database credentials.
-
+```
    public class DatabaseUtil {
     private static final String URL = "jdbc:mysql://localhost:3306/movie_rental_db";
     private static final String USER = "your_username";
@@ -114,7 +116,7 @@ CREATE TABLE Rental (
         return DriverManager.getConnection(URL, USER, PASSWORD);
     }
 }
-
+```
 5.	Compile and Run the Application:
 
     javac -cp .;mysql-connector-java-8.0.23.jar MovieRentalSystem.java
