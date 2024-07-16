@@ -77,6 +77,22 @@ CREATE TABLE Rental (
 
 ## Setup
 
+### Prerequisites
+
+1. **Java Development Kit (JDK):**
+   - Download and install JDK from the [Oracle JDK download page](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html).
+   - Ensure `java` and `javac` commands are available in your PATH.
+
+2. **MySQL Database:**
+   - Download and install MySQL from the [MySQL download page](https://dev.mysql.com/downloads/installer/).
+   - Set up a database and user for the application.
+
+3. **MySQL Connector/J:**
+   - Download MySQL Connector/J from the [MySQL Connector/J download page](https://dev.mysql.com/downloads/connector/j/).
+   - Extract the downloaded ZIP file and note the path to the JAR file (e.g., `mysql-connector-java-8.0.23.jar`).
+  
+### Project Setup
+
 1. **Clone the Repository:**
 
    ```sh
@@ -89,12 +105,23 @@ CREATE TABLE Rental (
 3.	Configure Database Connection:
     Update the DatabaseUtil class with your MySQL database credentials.
 
-4.	Compile and Run the Application:
+   public class DatabaseUtil {
+    private static final String URL = "jdbc:mysql://localhost:3306/movie_rental_db";
+    private static final String USER = "your_username";
+    private static final String PASSWORD = "your_password";
 
-    javac -cp .;mysql-connector-java-8.0.23.jar Main.java
-    java -cp .;mysql-connector-java-8.0.23.jar Main
+    public static Connection getConnection() throws SQLException {
+        return DriverManager.getConnection(URL, USER, PASSWORD);
+    }
+}
 
-5.	Replace mysql-connector-java-8.0.23.jar with the path to your MySQL Connector JAR file.
+5.	Compile and Run the Application:
+
+    javac -cp .;mysql-connector-java-8.0.23.jar MovieRentalSystem.java
+  	
+    java -cp .;mysql-connector-java-8.0.23.jar MovieRentalSystem
+
+    Replace mysql-connector-java-8.0.23.jar with the path to your MySQL Connector JAR file.
 
 Usage
 
