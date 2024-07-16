@@ -118,14 +118,13 @@ CREATE TABLE Rental (
 }
 ```
 5.	Compile and Run the Application:
-
+```
     javac -cp .;mysql-connector-java-8.0.23.jar MovieRentalSystem.java
-  	
-    java -cp .;mysql-connector-java-8.0.23.jar MovieRentalSystem
-
+  	java -cp .;mysql-connector-java-8.0.23.jar MovieRentalSystem
+```
     Replace mysql-connector-java-8.0.23.jar with the path to your MySQL Connector JAR file.
 
-Usage
+## Usage
 
 Follow the menu options in the console application to manage movies, customers, and rentals.
 
