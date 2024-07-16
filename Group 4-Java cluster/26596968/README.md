@@ -1,0 +1,72 @@
+# Movie Rental System
+
+This is a simple movie rental system developed using Core Java, MySQL, and JDBC. The application allows users to manage movies, customers, and rental transactions.
+
+## Features
+
+- **Movie Management**
+  - Add a new movie
+  - View movie details
+  - Update movie information
+  - Delete a movie
+
+- **Customer Management**
+  - Register a new customer
+  - View customer details
+  - Update customer information
+  - Delete a customer
+
+- **Rental Management**
+  - Rent a movie to a customer
+  - Return a rented movie
+  - View rental history of a customer
+  - List currently rented movies
+
+## Database Schema
+
+- **Movie Table:**
+  - `movie_id` (Primary Key)
+  - `title`
+  - `genre`
+  - `release_year`
+  - `quantity_available`
+
+- **Customer Table:**
+  - `customer_id` (Primary Key)
+  - `name`
+  - `email`
+  - `phone_number`
+
+- **Rental Table:**
+  - `rental_id` (Primary Key)
+  - `movie_id` (Foreign Key references Movie Table)
+  - `customer_id` (Foreign Key references Customer Table)
+  - `rental_date`
+  - `return_date`
+
+## Setup
+
+1. **Clone the Repository:**
+
+   ```sh
+   git clone https://github.com/your-username/your-repository.git
+   cd your-repository
+
+2.	Set Up MySQL Database:
+    Create a database and the necessary tables using the provided SQL scripts.
+
+3.	Configure Database Connection:
+    Update the DatabaseUtil class with your MySQL database credentials.
+
+4.	Compile and Run the Application:
+
+    javac -cp .;mysql-connector-java-8.0.23.jar Main.java
+    java -cp .;mysql-connector-java-8.0.23.jar Main
+
+5.	Replace mysql-connector-java-8.0.23.jar with the path to your MySQL Connector JAR file.
+
+Usage
+
+Follow the menu options in the console application to manage movies, customers, and rentals.
+
+
